@@ -1,0 +1,45 @@
+*{
+    padding:5px;
+    margin:5px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal;
+    font-variation-settings:"wdth" 300;
+}
+#webname {
+    background-color: #FFFCF2;
+    font-weight:500;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #252422;
+    font-weight:500;
+    font-size: 15px;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #EB5E28;
+}
+th{
+    padding:12px;
+    background-color:#CCC5B9;
+    color:#FFFCF2;
+    width:fit-content;
+}
+tr:nth-child(odd){
+    background-color: rgb(219, 208, 195);
+}
+form *{
+    display:block;
+    margin:auto;
+    text-align: center;
+}
+button[type="submit"]{
+    background-color: #CCC5B9;
+    border:none;
+    border-radius:25px;
+}
