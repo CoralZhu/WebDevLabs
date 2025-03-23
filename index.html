@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./static/script.js" defer></script>
 </head>
 
-<body style="font-family: Arial">
+<body style="font-family: Arial" onload="addYear();greetingFunc();">
     <header style="color:rgba(64, 61, 57); background:rgba(204, 197, 185)">
         <h1 id="webname">Coral Zhu</h1>
         <nav>
@@ -27,9 +28,14 @@
         <h2 id="greeting">Hi, my name is Coral Zhu</h2>
         <img src="static/photo.JPG" alt="a photo of Coral" width="200">
         <p id="intro">I am a student at Carnegie Mellon University, studying Information Systems.</p>
+        <div id="longIntro">
+            <p>I am deeply interested in coding, designing, and exploring new technologies that push the boundaries of innovation. My passion for web development drives me to learn more new skills.</p>
+            <button id="readLess">Read Less</button>
+        </div>
+        <button id="readMore">Read More</button>
     </div>
     <footer>
-        <p>&copy;Coral Zhu🫡</p>
+        <p>🎨Designed and coded by Coral Zhu&copy;<span id="copyYear"></span>🫡</p>
     </footer>
 </body>
 </html>

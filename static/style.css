@@ -43,3 +43,40 @@ button[type="submit"]{
     border:none;
     border-radius:25px;
 }
+#copyYear{
+    margin:0;
+    padding:0;
+}
+/* #funList{
+    display:none;
+} */
+#longIntro{
+    display:none;
+}
+.funIMG{
+    border-radius: 100%;
+    width:500px;
+    height:auto;
+}
+.funVideo{
+    width:500px;
+    height:auto;
+}
+.container{
+    display:inline-block;
+    border-radius: 10%;
+    box-shadow: #CCC5B9;
+}
+.mapFrame{
+    width: 100px;
+    height:auto;
+}
+.mainLayout{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.mainLayout > div{
+    flex:1 1 300px;
+}
