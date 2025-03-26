@@ -18,7 +18,6 @@
     font-weight:500;
     font-size: 15px;
     margin-right: 15px;
-    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -47,36 +46,29 @@ button[type="submit"]{
     margin:0;
     padding:0;
 }
-/* #funList{
+#funList{
     display:none;
-} */
+}
 #longIntro{
     display:none;
 }
-.funIMG{
-    border-radius: 100%;
-    width:500px;
-    height:auto;
+.nav-link.active{
+    color:#EB5E28;
+    font-weight: bold;
 }
-.funVideo{
-    width:500px;
-    height:auto;
-}
-.container{
-    display:inline-block;
-    border-radius: 10%;
-    box-shadow: #CCC5B9;
-}
-.mapFrame{
-    width: 100px;
-    height:auto;
-}
-.mainLayout{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-}
-.mainLayout > div{
-    flex:1 1 300px;
-}
+@keyframes fadeZoomColor {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+      color:#CCC5B9;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      color:#252422
+    }
+  }
+  #webname {
+    animation: fadeZoomColor 1.2s ease-out forwards;
+  }
+  

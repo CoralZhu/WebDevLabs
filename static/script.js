@@ -73,12 +73,12 @@ function addYear(){
     const currentYear = new Date().getFullYear();
     document.getElementById("copyYear").textContent = currentYear;
 }
-// function showList(){
-//     const list=document.getElementById('funList');
-//     const button=document.getElementById('showListButton');
-//     list.style.display='block';
-//     button.style.display='none';
-// }
+function showList(){
+    const list=document.getElementById('funList');
+    const button=document.getElementById('showListButton');
+    list.style.display='block';
+    button.style.display='none';
+}
 
 function validate() {
     const form=document.getElementById("contactForm");
@@ -95,10 +95,11 @@ function validate() {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const form=document.getElementById("contactForm");
-    const errorMessage=document.getElementById("errorMessage");
-    errorMessage.innerHTML="Please fill out the form correctly so I can get back to you :)";
+// document.addEventListener("DOMContentLoaded", () => {
+//     const form=document.getElementById("contactForm");
+//     const errorMessage=document.getElementById("errorMessage");
+//     errorMessage.innerHTML="Please fill out the form correctly so I can get back to you :)";
+
     // form.addEventListener("submit",function(event) {
     //     errorMessage.textContent= "";
     //     if (!form.checkValidity()) {
@@ -107,13 +108,21 @@ document.addEventListener("DOMContentLoaded", () => {
     //         errorMessage.innerHTML="Please fill out the form correctly so I can get back to you :)";
     //     }
     // });
-});
-function getAdvice(){
-    fetch("https://api.adviceslip.com/advice").then(response => response.json()).then(data => {
-        document.getElementById("adviceText").innerText=data.slip.advice;
-    })
-    .catch(error => {
-        console.error("Error fetching advice:",error);
-        document.getElementById("adviceText").innerText="Oops, something went wrong. Please try again later.";
-    })
+// });
+function showBurger(){
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
 }
+  
+function highlight(){
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link=>{
+        const linkPath = link.getAttribute('href');
+        if (linkPath == currentPath){
+            link.classList.add('active');
+        }
+    });
+}
+document.addEventListener('DOMContentLoaded',highlight())

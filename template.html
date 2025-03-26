@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Your name professional website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Layout with Responsive Nav</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body style="font-family: Arial" onload="addYear();greetingFunc();">
+    <div class="container">
+        <!-- <div class="test-icon">
+            <i class="fas fa-bars"></i>
+        </div> --> 
+        <header class="header">
+            <h1 id="webname">Coral Zhu</h1>
+        </header>
+        <nav class="nav">
+            <div class="hamburger" onclick="showBurger()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="views/cv.html" class="nav-link">CV</a></li>
+                <li><a href="views/contact.html" class="nav-link">Contact Me</a></li>
+                <li><a href="views/fun.html" class="nav-link">For Fun</a></li>
+            </ul>
+        </nav>
+        <div class="mainimg">
+            <img src="static/photo.JPG" alt="a photo of Coral" width="200">
+        </div>
+        <main class="maincontent">
+            <p id="intro">I am a student at Carnegie Mellon University, studying Information Systems.</p>
+            <div id="longIntro">
+                <p>I am deeply interested in coding, designing, </p>
+                <p>exploring new technologies that push the boundaries of innovation.</p> 
+                <p>My passion for web development drives me to learn more new skills.</p>
+                <button id="readLess">Read Less</button>
+            </div>
+            <button id="readMore">Read More</button>
+        </main>
+        <div class="bottomcontent">
+            <h2 id="greeting">Hi, my name is Coral Zhu</h2>
+        </div>
+        <footer class="footer">
+            <p>🎨Designed and coded by Coral Zhu&copy;<span id="copyYear"></span>🫡</p>
+        </footer>
+    </div>
+    <!-- <div>
+        <i class="fas fa-bars"></i>
+    </div> -->
+    <script src="static/script.js"></script>
+</body>
+</html>
